@@ -26,3 +26,13 @@ texto = input("Digita a sua senha: ")
 while texto != "LetsCode":
     texto = input("Senha inválida, tente novamente. Digite a sua senha: ")
 print("Senha correta!")
+
+contador = 0
+
+while contador < 10:
+    contador += 1
+    if contador == 1:
+        continue
+    print(contador, "itens limpos")
+    
+print("Fim da repetição do bloco while.")
