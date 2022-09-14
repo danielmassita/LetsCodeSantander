@@ -10,6 +10,7 @@ print(empresa)
 empresa = "Let's Code"
 print(empresa)
 
+### STRINGS PARTE 2 ###
 ### frase = "O professor Pietro da Let's Code disse: "Hoje a pizza é por minha conta!"
 ### Podemos usar um caracter de escape, ou seja, contra-barra ###
 frase = "O professor Pietro da Let's Code disse: \"Hoje a pizza é por minha conta!\""
