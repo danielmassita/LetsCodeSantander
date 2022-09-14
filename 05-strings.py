@@ -35,6 +35,23 @@ print(cabecalho.strip()) ### "MENU PRINCIPAL"
 
 nome_cidade = "rIo DE jaNeirO"
 
+print(nome_cidade.title()) ### Rio De Janeiro
+print(nome_cidade.capitalize()) ### Rio de janeiro
+print(nome_cidade.lower()) ### rio de janeiro
+print(nome_cidade.upper()) ### RIO DE JANEIRO
+
+nome_cidade = input(('Que cidade do Brasil é conhecida como cidade maravilhosa? '))
+nome_cidade = nome_cidade.strip()
+while nome_cidade.lower() != 'rio de janeiro': ### Vai continuar no loop até acertarem a resposta! ###
+    print('Tenta de novo, vai...')
+    nome_cidade = input('Que cidade do Brasil é conhecida como cidade maravilhsoa? ')
+print('Booa, campeão!')
+
+mensagem = 'Você viu o que o Pietro disse na sala ontem?'
+fui_citado = 'Pietro' in mensagem ### True/False verificando se houve uma menção ao texto em questão... ### 
+print(fui_citado)
+
+
 ### Operadores aritméticos podem funcionar com STRs também! ###
 cumprimento = 'Olá, '
 nome = 'Felipe'
@@ -52,19 +69,3 @@ preco_gasolina = 3.476
 print('O preço da gasolina hoje subiu e está em R$ {:.2f}'.format(preco_gasolina)) ### o índice .2f mostrando uma FLAG e usando 2 casas de FLOAT (casas decimais arredondando) ###
 
 
-
-print(nome_cidade.title()) ### Rio De Janeiro
-print(nome_cidade.capitalize()) ### Rio de janeiro
-print(nome_cidade.lower()) ### rio de janeiro
-print(nome_cidade.upper()) ### RIO DE JANEIRO
-
-nome_cidade = input(('Que cidade do Brasil é conhecida como cidade maravilhosa? '))
-nome_cidade = nome_cidade.strip()
-while nome_cidade.lower() != 'rio de janeiro': ### Vai continuar no loop até acertarem a resposta! ###
-    print('Tenta de novo, vai...')
-    nome_cidade = input('Que cidade do Brasil é conhecida como cidade maravilhsoa? ')
-print('Booa, campeão!')
-
-mensagem = 'Você viu o que o Pietro disse na sala ontem?'
-fui_citado = 'Pietro' in mensagem ### True/False verificando se houve uma menção ao texto em questão... ### 
-print(fui_citado)
