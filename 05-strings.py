@@ -34,6 +34,24 @@ print(cabecalho.strip()) ### "MENU PRINCIPAL"
 
 nome_cidade = "rIo DE jaNeirO"
 
+### Operadores aritméticos podem funcionar com STRs também! ###
+cumprimento = 'Olá, '
+nome = 'Felipe'
+print(cumprimento + nome)
+
+print(nome*5)
+nome = 'Felipe'
+idade = 35 ### Teremos de transformar INT para STR ###
+n_filhos = 2 ### Teremos de transformar INT para STR ###
+print(nome + str(idade) + str(n_filhos))
+
+print(nome + ' tem ' + str(idade) + ' anos de idade e ' + str(n_filhos) + ' filhos.')
+print('{} tem {} anos e {} filhos.'.format(nome, idade, n_filhos))
+preco_gasolina = 3.476
+print('O preço da gasolina hoje subiu e está em R$ {:.2f}'.format(preco_gasolina)) ### o índice .2f mostrando uma FLAG e usando 2 casas de FLOAT (casas decimais arredondando) ###
+
+
+
 print(nome_cidade.title()) ### Rio De Janeiro
 print(nome_cidade.capitalize()) ### Rio de janeiro
 print(nome_cidade.lower()) ### rio de janeiro
